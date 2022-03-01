@@ -66,19 +66,19 @@ async def set_afk(afk_e):
         AFKREASON = string
         await afk_e.edit(f"┌ ⚄ Pesan Otomatis\n│┌ {ALIVE_NAME} AFK dulu\n└└ Karena : {AFKREASON}")
     else:
-        await afk_e.edit("┌ ⚄ A F K\n└└ Jangan Diganggu Ya🏃!")
+        tunggu    afk_e . edit ( "┌ AFK\n└└ ga usah ganggu kontol!" )
     if user.last_name:
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name))
     else:
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name))
     if BOTLOG:
-        await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\n**Lagi AFK dulu gaess!**")
+        tunggu  afk_e . klien . send_message ( BOTLOG_CHATID , "#AFK\n**AFK dulu gaess!**" )
     ISAFK = True
     afk_time = datetime.now()  # pylint:disable=E0602
-    raise StopPropagation
-
-
-@register(outgoing=True)
+      tingkatkan StopPropagation
+saya
+saya
+@register ( keluar = Benar )
 async def type_afk_is_not_true(notafk):
     """ This sets your status as not afk automatically when you write something while being afk """
     global ISAFK
